@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-2</title>
+</head>
+<style>
+ /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Paragraphs */
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* List Styling */
+ul {
+    list-style: disc inside;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Image Container */
+.output-images-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.output-images-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.output-images-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Link */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.back-link:hover {
+    background-color: #0056b3;
+}
+/* Responsive Typography */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.75rem;
+    }
+
+    section p, ul li {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive Layout Adjustments */
+@media (max-width: 992px) {
+    .output-images-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .output-images-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+<body>
+<section id="abstract">
+    <h2>Abstract</h2>
+    <p>This project focuses on the development of an Automatic Number Plate Recognition (ANPR) system using Python, integrating computer vision and machine learning techniques. The primary goal is to design an efficient and accurate system capable of recognizing license plates from images or video streams. The project employs OpenCV for image processing and manipulation, and a pretrained deep learning model for character recognition.The system's workflow includes image acquisition, preprocessing, number plate localization, character segmentation, and recognition. Leveraging Convolutional Neural Networks (CNNs) for feature extraction and classification, the deep learning model is trained on a diverse dataset of license plates to enhance its accuracy and generalization capabilities. The implementation also considers real-world challenges such as varying lighting conditions, plate orientation, and occlusions.
+<br><br>
+       The project provides a user-friendly interface for inputting images or accessing live video feeds, making it suitable for integration into surveillance systems, traffic management, and security applications. Automatic Number Plate Recognition (ANPR) is a technology that uses optical character recognition on images to read vehicle registration plates. This system is widely employed in various applications, including traffic enforcement, toll collection, and security. ANPR systems capture images of vehicle license plates through cameras, process these images to extract the plate number, and then compare the extracted data against a database. The technology involves several key steps: image acquisition, plate localization, character segmentation, and character recognition. Advances in machine learning and computer vision have significantly improved the accuracy and efficiency of ANPR systems. This has enabled real-time processing and integration with other systems for comprehensive traffic management solutions. Despite its numerous benefits, ANPR faces challenges such as varying lighting conditions, diverse plate designs, and privacy concerns, which continue to drive research and development in the field
+        </p>
+</section>
+
+<section id="tools-languages">
+    <h2>Tools & Languages Used</h2>
+    <ul>
+        <li>Programming Languages: Python</li>
+        <li>Librarys: numpy, os</li>
+        <li>Database: MySQL</li>
+        <li>Tools:Visual Studio Code</li>
+    </ul>
+</section>
+
+<section id="output-images">
+    <h2>Output Images</h2>
+    <div class="output-images-container">
+        <img src="asserts/p2o1.png" alt="Screenshot of the dashboard" />
+        <img src="asserts/p2o2.png" alt="Screenshot of grievance submission form" />
+        <img src="asserts/p2o3.png" alt="Screenshot of admin panel" />
+    </div>
+</section>
+</body>
+</html>
